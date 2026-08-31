@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leo Schaub — CS Student & Applied ML Engineer</title>
+<meta name="description" content="Portfolio of Leo Schaub, Computer Science student at Texas A&M University and Applied ML Engineering Intern at Qualcomm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#home" class="logo">Leo Schaub</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Leo Schaub</h1>
+      <h2 class="hero-role">Computer Science Student &amp; Applied ML Engineer</h2>
+      <p class="hero-copy">
+        I'm a CS student at Texas A&amp;M University building applied machine learning systems —
+        currently working on LLM agent infrastructure at Qualcomm. I like turning research-grade
+        ML ideas (RAG, agents, reinforcement learning) into tools people actually use.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#projects" class="btn btn-secondary">See my work</a>
+        <!-- TODO: replace with a link to your hosted resume PDF -->
+        <a href="resume.pdf" class="btn btn-ghost">Resume</a>
+      </div>
+      <ul class="hero-links">
+        <!-- TODO: replace these placeholder hrefs with your real profiles -->
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:leoschaub28@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-label">01 — About</p>
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I'm a Computer Science student at Texas A&amp;M University (expected graduation May 2028),
+            minoring in Math and Japanese, and serving as a Computer Science Ambassador. I also work
+            as a Teaching Assistant for Computer Science III, helping other students get comfortable
+            with data structures and algorithms.
+          </p>
+          <p>
+            My focus is applied machine learning — LLM agents, retrieval-augmented generation, and
+            the infrastructure (MCP servers, agent frameworks like LangGraph) that makes those systems
+            reliable in production. Before Texas A&amp;M, I studied at Blinn College. Outside of coursework,
+            I've built research projects on transformer interpretability and a handful of self-directed
+            ML and RL projects.
+          </p>
+        </div>
+        <div class="about-facts">
+          <div class="fact-card">
+            <span class="fact-label">Education</span>
+            <span class="fact-value">B.S. Computer Science, Texas A&amp;M University</span>
+            <span class="fact-sub">Expected May 2028 · Minors in Math &amp; Japanese</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Based in</span>
+            <span class="fact-value">College Station, TX</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Currently</span>
+            <span class="fact-value">Applied ML Engineering Intern @ Qualcomm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <p class="section-label">02 — Experience</p>
+      <h2 class="section-title">Where I've worked</h2>
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Applied ML Engineering Intern</h3>
+              <span class="timeline-org">Qualcomm</span>
+            </div>
+            <p>
+              Working on NOVA, a LangGraph-based AI agent system — building and refining agent
+              orchestration, structured state management, and tool-calling pipelines.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>AI Engineering Intern</h3>
+              <span class="timeline-org">Advantest America · Summer 2024</span>
+            </div>
+            <p>
+              First substantial AI engineering role. Built a Data Curator retrieval-augmented
+              generation (RAG) tool, natural-language query interfaces, MCP server infrastructure,
+              and ML-based monitoring tools.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Teaching Assistant, Computer Science III</h3>
+              <span class="timeline-org">Texas A&amp;M University</span>
+            </div>
+            <p>
+              Support students through data structures, algorithms, and object-oriented C++ —
+              office hours, grading, and debugging help.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Computer Science Ambassador</h3>
+              <span class="timeline-org">Texas A&amp;M University</span>
+            </div>
+            <p>
+              Represent the CS department to prospective students and the broader university
+              community.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-label">03 — Projects</p>
+      <h2 class="section-title">Selected projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>AI Data Transformation Pipeline</h3>
+          <p>
+            A concept pipeline combining FastMCP, Claude, and Plotly for natural-language-driven
+            data cleaning and visualization — describe the transform you want in plain English,
+            get a cleaned dataset and chart back.
+          </p>
+          <div class="tag-row">
+            <span class="tag">FastMCP</span>
+            <span class="tag">Claude / LLM</span>
+            <span class="tag">Plotly</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Chain-of-Thought Faithfulness Research</h3>
+          <p>
+            Undergraduate research probing whether a transformer's stated reasoning actually
+            reflects its internal computation, using probing classifiers and activation patching
+            on GPT-2.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Interpretability</span>
+            <span class="tag">GPT-2</span>
+            <span class="tag">Probing Classifiers</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Internship Pipeline Tracker</h3>
+          <p>
+            A Sankey diagram and CSV-backed tracker for visualizing an internship application
+            funnel end to end — applied, screened, interviewed, offer.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Data Viz</span>
+            <span class="tag">Python</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Block Blast RL Agent</h3>
+          <p>
+            A Deep Q-Network (DQN) agent trained to play Block Blast, exploring reward shaping
+            and state representation for a puzzle-style game environment.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">DQN</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>AI Social Media Automation</h3>
+          <p>
+            An automation tool built for Diesel Barbershop to help generate and schedule social
+            media content.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Automation</span>
+            <span class="tag">Applied AI</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-label">04 — Skills</p>
+      <h2 class="section-title">Tools &amp; technologies</h2>
+      <div class="skills-grid">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">C++</span>
+        <span class="skill-pill">LangGraph &amp; LangChain</span>
+        <span class="skill-pill">Retrieval-Augmented Generation</span>
+        <span class="skill-pill">MCP Servers</span>
+        <span class="skill-pill">Reinforcement Learning</span>
+        <span class="skill-pill">NLP</span>
+        <span class="skill-pill">Data Structures &amp; Algorithms</span>
+        <span class="skill-pill">Data Visualization</span>
+        <span class="skill-pill">Discrete Math</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container contact-inner">
+      <p class="section-label">05 — Contact</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact-copy">
+        I'm always open to conversations about ML engineering, agent systems, or internship and
+        research opportunities. The fastest way to reach me is email.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:leoschaub28@gmail.com" class="btn btn-primary">leoschaub28@gmail.com</a>
+      </div>
+      <ul class="hero-links contact-links">
+        <!-- TODO: replace these placeholder hrefs with your real profiles -->
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Leo Schaub</span>
+    <span>Built with HTML &amp; CSS, hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
