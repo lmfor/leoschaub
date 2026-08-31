@@ -3,273 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leo Schaub — CS Student & Applied ML Engineer</title>
-<meta name="description" content="Portfolio of Leo Schaub, Computer Science student at Texas A&M University and Applied ML Engineering Intern at Qualcomm.">
+<title>Leo Schaub</title>
+<meta name="description" content="Leonardo Schaub — Computer Science student at Texas A&M University working on ML systems, agent infrastructure, and LLM inference research.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
 <body>
 
 <header class="site-header">
-  <nav class="nav container">
-    <a href="#home" class="logo">Leo Schaub</a>
+  <div class="container nav">
+    <a href="#intro" class="logo">leo<span class="logo-dim">.schaub</span></a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
-    </ul>
-  </nav>
+    <nav class="nav-links" id="navLinks">
+      <a href="#experience">experience</a>
+      <a href="#research">research</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-  <section id="home" class="hero">
-    <div class="container hero-inner">
-      <p class="eyebrow">Hi, I'm</p>
-      <h1>Leo Schaub</h1>
-      <h2 class="hero-role">Computer Science Student &amp; Applied ML Engineer</h2>
-      <p class="hero-copy">
-        I'm a CS student at Texas A&amp;M University building applied machine learning systems —
-        currently working on LLM agent infrastructure at Qualcomm. I like turning research-grade
-        ML ideas (RAG, agents, reinforcement learning) into tools people actually use.
+  <section id="intro" class="intro">
+    <div class="container">
+      <p class="status-line"><span class="status-dot"></span>college station, tx</p>
+
+      <h1 class="intro-name">Leonardo Schaub</h1>
+      <p class="intro-role"><span id="typewriter"></span><span class="cursor" aria-hidden="true">_</span></p>
+
+      <p class="intro-copy">
+        I build agent infrastructure and study how large language models actually run underneath.
+        Most recently I rebuilt Qualcomm's NOVA observability agent into a multi-agent swarm; right now
+        I'm researching inference-time optimization at Texas A&amp;M.
       </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get in touch</a>
-        <a href="#projects" class="btn btn-secondary">See my work</a>
-        <!-- TODO: replace with a link to your hosted resume PDF -->
-        <a href="resume.pdf" class="btn btn-ghost">Resume</a>
-      </div>
-      <ul class="hero-links">
-        <!-- TODO: replace these placeholder hrefs with your real profiles -->
-        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="mailto:leoschaub28@gmail.com">Email</a></li>
-      </ul>
+
+      <dl class="intro-meta">
+        <div><dt>education</dt><dd>B.S. Computer Science, Texas A&amp;M University — May 2028</dd></div>
+        <div><dt>minors</dt><dd>Math, Japanese</dd></div>
+      </dl>
+
+      <nav class="intro-links" aria-label="Contact links">
+        <a href="mailto:leoschaub28@gmail.com">email</a>
+        <a href="https://github.com/lmfor" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/leonardo-schaub-a53a28247/" target="_blank" rel="noopener">linkedin</a>
+        <a href="resume.pdf" target="_blank" rel="noopener">résumé</a>
+      </nav>
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="experience" class="section">
     <div class="container">
-      <p class="section-label">01 — About</p>
-      <h2 class="section-title">About me</h2>
-      <div class="about-grid">
-        <div class="about-copy">
-          <p>
-            I'm a Computer Science student at Texas A&amp;M University (expected graduation May 2028),
-            minoring in Math and Japanese, and serving as a Computer Science Ambassador. I also work
-            as a Teaching Assistant for Computer Science III, helping other students get comfortable
-            with data structures and algorithms.
-          </p>
-          <p>
-            My focus is applied machine learning — LLM agents, retrieval-augmented generation, and
-            the infrastructure (MCP servers, agent frameworks like LangGraph) that makes those systems
-            reliable in production. Before Texas A&amp;M, I studied at Blinn College. Outside of coursework,
-            I've built research projects on transformer interpretability and a handful of self-directed
-            ML and RL projects.
-          </p>
+      <p class="section-label">// experience</p>
+
+      <article class="ledger-row reveal">
+        <div class="ledger-date">
+          <span>May 2026</span>
+          <span>Aug 2026</span>
         </div>
-        <div class="about-facts">
-          <div class="fact-card">
-            <span class="fact-label">Education</span>
-            <span class="fact-value">B.S. Computer Science, Texas A&amp;M University</span>
-            <span class="fact-sub">Expected May 2028 · Minors in Math &amp; Japanese</span>
+        <div class="ledger-body">
+          <div class="ledger-head">
+            <h3>Software Engineering Intern <span class="ledger-org">— Qualcomm Inc.</span></h3>
+            <span class="ledger-place">San Diego, CA</span>
           </div>
-          <div class="fact-card">
-            <span class="fact-label">Based in</span>
-            <span class="fact-value">College Station, TX</span>
-          </div>
-          <div class="fact-card">
-            <span class="fact-label">Currently</span>
-            <span class="fact-value">Applied ML Engineering Intern @ Qualcomm</span>
-          </div>
+          <p class="ledger-sub">NOVA (Next-Generation Observability Virtual Agent)</p>
+          <ul>
+            <li>Migrated NOVA from a monolithic agent to a multi-agent Swarm architecture — 86% lower token usage, 72% faster responses; prototyped Supervisor and Supervisor/Swarm hybrid designs.</li>
+            <li>Designed concurrent tool-result compression and de-duplication in LangGraph, cutting response time ~46%.</li>
+            <li>Built an agent-regression benchmarking framework using golden test cases and LLM-as-a-judge rubrics to compare accuracy, latency, and token efficiency across releases.</li>
+          </ul>
         </div>
-      </div>
+      </article>
+
+      <article class="ledger-row reveal">
+        <div class="ledger-date">
+          <span>May 2025</span>
+          <span>Aug 2025</span>
+        </div>
+        <div class="ledger-body">
+          <div class="ledger-head">
+            <h3>Machine Learning Engineering Intern <span class="ledger-org">— Advantest America Inc.</span></h3>
+            <span class="ledger-place">Austin, TX</span>
+          </div>
+          <ul>
+            <li>Reduced SmartTest 7/8 graph generation time by 80%+ with an NLP-driven interface translating natural language into automated SQL queries and visualizations.</li>
+            <li>Designed agent orchestration infrastructure using MCP servers to safely execute external tools and enforce structured workflows across LLM systems.</li>
+            <li>Automated updates to the Test Documentation Center by generating relevance reports for RAG retraining, cutting manual document review time 60%+.</li>
+          </ul>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section id="experience" class="section section-alt">
+  <section id="research" class="section section-alt">
     <div class="container">
-      <p class="section-label">02 — Experience</p>
-      <h2 class="section-title">Where I've worked</h2>
-      <div class="timeline">
+      <p class="section-label">// research</p>
 
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Applied ML Engineering Intern</h3>
-              <span class="timeline-org">Qualcomm</span>
-            </div>
-            <p>
-              Working on NOVA, a LangGraph-based AI agent system — building and refining agent
-              orchestration, structured state management, and tool-calling pipelines.
-            </p>
+      <article class="ledger-row reveal">
+        <div class="ledger-date">
+          <span>Mar 2026</span>
+          <span>Present</span>
+        </div>
+        <div class="ledger-body">
+          <div class="ledger-head">
+            <h3>Undergraduate ML Researcher <span class="ledger-org">— Texas A&amp;M University</span></h3>
+            <span class="ledger-place">College Station, TX</span>
           </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>AI Engineering Intern</h3>
-              <span class="timeline-org">Advantest America · Summer 2024</span>
-            </div>
-            <p>
-              First substantial AI engineering role. Built a Data Curator retrieval-augmented
-              generation (RAG) tool, natural-language query interfaces, MCP server infrastructure,
-              and ML-based monitoring tools.
-            </p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Teaching Assistant, Computer Science III</h3>
-              <span class="timeline-org">Texas A&amp;M University</span>
-            </div>
-            <p>
-              Support students through data structures, algorithms, and object-oriented C++ —
-              office hours, grading, and debugging help.
-            </p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Computer Science Ambassador</h3>
-              <span class="timeline-org">Texas A&amp;M University</span>
-            </div>
-            <p>
-              Represent the CS department to prospective students and the broader university
-              community.
-            </p>
-          </div>
-        </article>
-
-      </div>
+          <ul>
+            <li>Researching LLM inference and architecture optimization — speculative decoding, quantization, KV-cache optimization, and batching — to reduce latency, memory, and compute cost.</li>
+            <li>Investigating Mixture-of-Experts, dense-to-MoE transformations, and multi-agent architectures to study tradeoffs between capacity, routing, and inference efficiency.</li>
+            <li>Experimenting with abliteration and representation-level interventions to analyze how targeted weight/activation changes affect model behavior.</li>
+            <li>Building a reproducible PyTorch inference harness benchmarking TTFT, inter-token latency, tokens/sec, and peak memory.</li>
+          </ul>
+        </div>
+      </article>
     </div>
   </section>
 
   <section id="projects" class="section">
     <div class="container">
-      <p class="section-label">03 — Projects</p>
-      <h2 class="section-title">Selected projects</h2>
-      <div class="project-grid">
+      <p class="section-label">// projects</p>
 
-        <article class="project-card">
-          <h3>AI Data Transformation Pipeline</h3>
-          <p>
-            A concept pipeline combining FastMCP, Claude, and Plotly for natural-language-driven
-            data cleaning and visualization — describe the transform you want in plain English,
-            get a cleaned dataset and chart back.
-          </p>
-          <div class="tag-row">
-            <span class="tag">FastMCP</span>
-            <span class="tag">Claude / LLM</span>
-            <span class="tag">Plotly</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Chain-of-Thought Faithfulness Research</h3>
-          <p>
-            Undergraduate research probing whether a transformer's stated reasoning actually
-            reflects its internal computation, using probing classifiers and activation patching
-            on GPT-2.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Interpretability</span>
-            <span class="tag">GPT-2</span>
-            <span class="tag">Probing Classifiers</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Internship Pipeline Tracker</h3>
-          <p>
-            A Sankey diagram and CSV-backed tracker for visualizing an internship application
-            funnel end to end — applied, screened, interviewed, offer.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Data Viz</span>
-            <span class="tag">Python</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Block Blast RL Agent</h3>
-          <p>
-            A Deep Q-Network (DQN) agent trained to play Block Blast, exploring reward shaping
-            and state representation for a puzzle-style game environment.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Reinforcement Learning</span>
-            <span class="tag">DQN</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>AI Social Media Automation</h3>
-          <p>
-            An automation tool built for Diesel Barbershop to help generate and schedule social
-            media content.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Automation</span>
-            <span class="tag">Applied AI</span>
-          </div>
-        </article>
-
-      </div>
+      <article class="project-entry reveal">
+        <div class="project-head">
+          <h3>LoL ML Pipeline</h3>
+          <span class="project-year">2026</span>
+        </div>
+        <p>
+          End-to-end ML pipeline predicting professional League of Legends match outcomes from
+          pre-game signals only — team and player identity, draft picks and bans, side selection,
+          patch context — deliberately excluding post-game statistics to eliminate label leakage.
+        </p>
+        <ul>
+          <li>Deterministic feature engineering over versioned raw match data with immutable dataset snapshots, so every training run is reproducible from a resolvable dataset identifier.</li>
+          <li>Experiment tracking, model artifact versioning, and drift monitoring hooks to support scheduled retraining — prioritizing system design correctness over short-term accuracy.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Docker</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Snowflake</span>
+        </div>
+      </article>
     </div>
   </section>
 
   <section id="skills" class="section section-alt">
     <div class="container">
-      <p class="section-label">04 — Skills</p>
-      <h2 class="section-title">Tools &amp; technologies</h2>
+      <p class="section-label">// skills</p>
       <div class="skills-grid">
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">C++</span>
-        <span class="skill-pill">LangGraph &amp; LangChain</span>
-        <span class="skill-pill">Retrieval-Augmented Generation</span>
-        <span class="skill-pill">MCP Servers</span>
-        <span class="skill-pill">Reinforcement Learning</span>
-        <span class="skill-pill">NLP</span>
-        <span class="skill-pill">Data Structures &amp; Algorithms</span>
-        <span class="skill-pill">Data Visualization</span>
-        <span class="skill-pill">Discrete Math</span>
+        <div class="skill-group reveal">
+          <span class="skill-cat">languages</span>
+          <p>Python, C++, Java, Haskell, SQL</p>
+        </div>
+        <div class="skill-group reveal">
+          <span class="skill-cat">ml / ai</span>
+          <p>TensorFlow, PyTorch, LangGraph, MCP, RAG, Transformers, LLM Inference Optimization</p>
+        </div>
+        <div class="skill-group reveal">
+          <span class="skill-cat">data / observability</span>
+          <p>NumPy, Pandas, PostgreSQL, Splunk, Datadog, Langfuse, Langsmith</p>
+        </div>
+        <div class="skill-group reveal">
+          <span class="skill-cat">cloud &amp; devops</span>
+          <p>AWS (S3, Batch, ECR), Docker, Git, Linux, CI/CD Pipelines</p>
+        </div>
+      </div>
+
+      <div class="leadership reveal">
+        <span class="skill-cat">leadership</span>
+        <p>
+          Texas A&amp;M College of Engineering Student Ambassador (Fall 2025–present) — leads
+          engineering tours for prospective students, families, and VIPs, engaging ~400 participants
+          weekly.
+        </p>
+        <span class="skill-cat">honors</span>
+        <p>Dean's Honor Roll (Spring 2025, Fall 2025) · Dean's Excellence Award (Spring 2026)</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section contact-section">
-    <div class="container contact-inner">
-      <p class="section-label">05 — Contact</p>
-      <h2 class="section-title">Let's talk</h2>
-      <p class="contact-copy">
-        I'm always open to conversations about ML engineering, agent systems, or internship and
-        research opportunities. The fastest way to reach me is email.
-      </p>
-      <div class="contact-actions">
-        <a href="mailto:leoschaub28@gmail.com" class="btn btn-primary">leoschaub28@gmail.com</a>
-      </div>
-      <ul class="hero-links contact-links">
-        <!-- TODO: replace these placeholder hrefs with your real profiles -->
-        <li><a href="https://github.com/lmfor" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/leonardo-schaub-a53a28247/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+    <div class="container">
+      <p class="section-label">// contact</p>
+      <h2 class="contact-heading">Say hello.</h2>
+      <a href="mailto:leoschaub28@gmail.com" class="contact-email">leoschaub28@gmail.com</a>
+      <nav class="intro-links" aria-label="Contact links">
+        <a href="https://github.com/lmfor" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/leonardo-schaub-a53a28247/" target="_blank" rel="noopener">linkedin</a>
+        <a href="resume.pdf" target="_blank" rel="noopener">résumé</a>
+      </nav>
     </div>
   </section>
 
@@ -278,7 +214,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <span>© <span id="year"></span> Leo Schaub</span>
-    <span>Built with HTML &amp; CSS, hosted on GitHub Pages</span>
+    <a href="#intro">back to top</a>
   </div>
 </footer>
 
